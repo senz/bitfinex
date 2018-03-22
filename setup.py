@@ -6,7 +6,7 @@ dependencies = [
     'httpretty'
 ]
 
-version = '0.2.6'
+version = '0.1.1'
 
 setup(name='bitfinex-saf',
     version=version,
@@ -15,7 +15,7 @@ setup(name='bitfinex-saf',
     author_email = 'scottjbarr@gmail.com',
     url = 'https://github.com/senz/bitfinex',
     license = 'MIT',
-    packages=['bitfinex-sax'],
+    packages=['bitfinex_saf'],
     scripts = ['scripts/bitfinex-poll-orderbook'],
     install_requires = dependencies,
     download_url = 'https://github.com/senz/bitfinex/tarball/%s' % version,
