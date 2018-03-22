@@ -82,7 +82,8 @@ class BitfinexClient:
         if options:
             self.options.update(options)
 
-        self._is_auth = bool(self.options['auth']) and (bool(self.options['key']) and bool(self.options['secret']))
+        auth = self.options["auth"] if "auth" in self.options else None
+        self._is_auth = bool(auth and "key" in auth and "secret" in auth)
         self._secret_key = self.options['auth']['secret'].encode('utf8') if self.is_auth else None
 
         self.url = "{}://{}".format(self.options["protocol"], self.options["host"])
