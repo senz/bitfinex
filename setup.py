@@ -8,17 +8,17 @@ dependencies = [
 
 version = '0.2.6'
 
-setup(name='bitfinex',
+setup(name='bitfinex-saf',
     version=version,
     description = 'Python client for the Bitfinex API',
-    author = 'Scott Barr',
+    author = 'Scott Barr, Senz',
     author_email = 'scottjbarr@gmail.com',
-    url = 'https://github.com/scottjbarr/bitfinex',
+    url = 'https://github.com/senz/bitfinex',
     license = 'MIT',
-    packages=['bitfinex'],
+    packages=['bitfinex-sax'],
     scripts = ['scripts/bitfinex-poll-orderbook'],
     install_requires = dependencies,
-    download_url = 'https://github.com/scottjbarr/bitfinex/tarball/%s' % version,
-    keywords = ['bitcoin', 'btc'],
+    download_url = 'https://github.com/senz/bitfinex/tarball/%s' % version,
+    keywords = ['bitcoin', 'btc', 'bitfinex'],
     classifiers = [],
     zip_safe=True)
